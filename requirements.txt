@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+ipython
+plantuml
+anthropic
+openai
+huggingface_hub
+requests
+Pillow
+google-generativeai
+sqlalchemy
+psycopg2-binary
+pgvector
+sentence-transformers

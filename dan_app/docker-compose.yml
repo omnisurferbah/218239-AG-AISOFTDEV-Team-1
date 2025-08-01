@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    # Use an image that comes with PostgreSQL and pgvector pre-installed
+    image: pgvector/pgvector:pg16
+    container_name: cuda_assist_db_container
+    restart: always
+    user: postgres
+    environment:
+      # These credentials should match what you have in your .env file
+      POSTGRES_DB: cuda_assist_db
+      POSTGRES_USER: postgres
+      # This password should match the one used in your Python application
+      POSTGRES_PASSWORD: battery_staple_horse_2390472300983
+    ports:
+      - "54321:5432" # Using a fixed port for local development consistency
